@@ -1,6 +1,17 @@
 # Storage Migration
 Map source bucket to `/root/src` and destination to `/root/dst`, use rsync to migrate all files.
 
+## Security
+Example of `dst_passwd` and `src_passwd`:
+```
+KEY:TOKEN
+```
+
+GCP:
+    Cloud Storage -> Configuration -> Interoperability -> Create Key 
+AWS:
+    Docs: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html
+
 
 ## Build image
 `$ docker build -t local/storage-migration .`
