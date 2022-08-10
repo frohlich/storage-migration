@@ -1,0 +1,3 @@
+*/file001.bin
+*/file500.bin
+*/file1000.bin
